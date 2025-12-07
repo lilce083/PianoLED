@@ -23,11 +23,18 @@ PianoLED is a project that integrates LED strip visualization with a piano, allo
 - Companion app with modes listed above for controlling LED behavior
 
 # Installation
-1. Connect your Arduino Uno R3 to your Mac via USB and the LED strip
-2. Plug the LED strip into an external 5V power supply
-3. Upload the `PianoLED.ino` sketch to your board
-4. Run the companion app, select a mode, and control the LEDs
-5. Play your piano and watch the LEDs light up in sync with your notes
+1. Connect :
+   - Connect your Arduino Uno R3 to your Mac Os via USB
+   - Connect LED strip via Arduino Uno R3 by 2 jumper wire (Gnd, data_pin 5) (image 1)
+   - Connect LED strip via an external 5v power supply
+2. Upload the `PianoLED.ino` sketch to your board
+3. Run the app, configure settings (baud rate, midi device, serial port), click connect button, select a mode, and control the LEDs (image 2)
+4. Play your MIDI deivce and watch the LEDs light up in sync with your notes
+
+# Images
+
+  1. ![1](images/unor3.jpg)
+  2. ![2](images/UIApp.png)
 
 # Usage
 - Configure LED mapping in the code (`PianoLED.ino`)
